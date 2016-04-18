@@ -1,5 +1,7 @@
 # Git
 
+## Commandes
+
 **Force pull**
 ```sh
 git reset --hard <repo>/<branch>
@@ -29,3 +31,38 @@ Créer un alias
 > Voir [Ignorer (temporairement) des fichiers déjà tracker](#l2)
 
 Editer fichier : ` .git/info/exclude `
+
+
+## Procedures
+
+**Remisage**  
+[Source](https://git-scm.com/book/fr/v1/Utilitaires-Git-Le-remisage)
+> Permet de mettre de côté les modifications effectué mais non commité.
+> Peut servir le temps de soumettre une correction en urgence
+
+Pour créer une nouvelle remise sur votre pile, exécutez `git stash`  
+Votre répertoire de travail est propre :
+```sh
+$ git status
+# On branch master
+nothing to commit, working directory clean
+```
+Pour voir quelles remises vous avez sauvegardées, vous pouvez utiliser la commande `git stash list`
+```sh
+$ git stash list
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051... Revert "added file_size"
+stash@{2}: WIP on master: 21d80a5... added number to log
+```
+Appliquer une remise `git stash apply stash@{2}`
+> Utiliser l'option --index pour demander à Git d'essayer de réappliquer les modifications de votre index. Ex : `git stash apply stash@{2} --index`
+
+Supprimer une remise
+```sh
+git stash drop stash@{0}
+```
+
+Appliquer et supprimer immédiatement la remise de votre pile
+```sh
+git stash pop stash@{0}
+```
