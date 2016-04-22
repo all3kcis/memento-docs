@@ -40,7 +40,8 @@ Editer fichier : ` .git/info/exclude `
 > Permet de mettre de côté les modifications effectué mais non commité.
 > Peut servir le temps de soumettre une correction en urgence
 
-Pour créer une nouvelle remise sur votre pile, exécutez `git stash`  
+Pour créer une nouvelle remise sur votre pile, exécutez `git stash`  ou mieux   
+`git stash save -u 'Message descriptif pour retrouver le stash'`  
 Votre répertoire de travail est propre :
 ```sh
 $ git status
