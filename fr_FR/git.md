@@ -32,6 +32,20 @@ Créer un alias
 
 Editer fichier : ` .git/info/exclude `
 
+**Modifier message du dernier commit**
+> si pas déjà envoyé en ligne
+
+`git commit --amend`
+
+**Nettoyer le répertoire de travail et l'index**
+> Les modifications non commit seront perdues
+`git reset --hard`
+
+**Retourner à un ancien commit**
+`git checkout [id_commit]`
+
+**Retourner au dernier commit**
+`git checkout master`
 
 ## Procedures
 
@@ -67,3 +81,6 @@ Appliquer et supprimer immédiatement la remise de votre pile
 ```sh
 git stash pop stash@{0}
 ```
+
+# Sources
+ - [Git-attitude.fr - Options git qui gagnent à être connues](http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues/#stasher-plus%20efficacement%20avec%20save%20et%20-u)
