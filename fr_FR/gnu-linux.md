@@ -3,6 +3,15 @@
 **Relancer l'interface réseau**
 `/etc/init.d/networking restart`
 
+**Affichage logs**
+
+Affichage des dernières lignes d'un fichier
+```sh
+tail -f fichier.log
+```
+Option `-n <chiffre>` pour définir le nombre de lignes
+Option `-f` mode follow, suivre en français.
+
 **Copie sécurisé**
 `scp -P 2113 file user@hote:path`
 
