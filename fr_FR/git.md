@@ -7,7 +7,7 @@
 git reset --hard <repo>/<branch>
 ```
 
-<a name="l2"></a>**Ignorer (temporairement) des fichiers déjà tracker**
+<a name="l2"></a>**Ignorer (temporairement) des fichiers déjà trackés**
 ```sh
 # Pour ignorer
 git update-index --assume-unchanged <file>
@@ -16,7 +16,7 @@ git update-index --assume-unchanged <file>
 git update-index --no-assume-unchanged <file>
 ```
 
-**Voir les fichiers ignorer "assume-unchanged"**
+**Voir les fichiers ignorés "assume-unchanged"**
 ```sh
 git ls-files -v | grep '^[[:lower:]]'
 ```
@@ -28,7 +28,7 @@ Créer un alias
 
 **Exclure des fichiers sans .gitignore**
 > Si les fichiers sont déjà suivi cela ne fonctionne pas.   
-> Voir [Ignorer (temporairement) des fichiers déjà tracker](#l2)
+> Voir [Ignorer (temporairement) des fichiers déjà trackés](#l2)
 
 Editer fichier : ` .git/info/exclude `
 
@@ -41,17 +41,17 @@ Editer fichier : ` .git/info/exclude `
 > Les modifications non commit seront perdues
 `git reset --hard`
 
-**Retourner à un ancien commit**
+**Retourner à un ancien commit**  
 `git checkout [id_commit]`
 
-**Retourner au dernier commit**
+**Retourner au dernier commit**  
 `git checkout master`
 
-## Procedures
+## Procédures
 
 **Remisage**  
 [Source](https://git-scm.com/book/fr/v1/Utilitaires-Git-Le-remisage)
-> Permet de mettre de côté les modifications effectué mais non commité.
+> Permet de mettre de côté les modifications effectuées mais non commitées.
 > Peut servir le temps de soumettre une correction en urgence
 
 Pour créer une nouvelle remise sur votre pile, exécutez `git stash`  ou mieux   
