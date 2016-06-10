@@ -6,7 +6,7 @@ Curl doit être installé sur le serveur pour lancer la commande suivante.
 ```sh
 curl -sS https://getcomposer.org/installer | php
 ```
-Puis pour une installation global (plus simple à utiliser ensuite)
+Puis pour une installation globale (plus simple à utiliser ensuite)
 ```sh
 mv composer.phar /usr/local/bin/composer
 ```
