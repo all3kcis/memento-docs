@@ -1,7 +1,7 @@
 # Jenkins
 
 *Voir aussi*
-	- [Integration Continue](fr_FR/integration-continue.md)
+	- [Integration Continue](integration-continue.md)
 
 ## Installation
 *Debian*  
