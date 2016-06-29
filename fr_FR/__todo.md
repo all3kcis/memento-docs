@@ -12,4 +12,5 @@
  * 9.4.1 : who
  * 9.4.2 : wall
  * 9.4.5 : definir heure
+ * chattr +i
  
