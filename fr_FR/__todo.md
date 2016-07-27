@@ -16,3 +16,8 @@
  
 ## PHP
  * Xdebug max value : https://xdebug.org/docs/all_settings#var_display_max_children
+
+## Duplicity
+ duplicity collection-status file:///path-backups/
+ duplicity --file-to-restore path/to/restore  file:///path/backups /path/to/restore
+ - --no-encryption
