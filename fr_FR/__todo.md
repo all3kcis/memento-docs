@@ -14,6 +14,8 @@
  * 9.4.5 : definir heure
  * chattr +i
  
+ du -h --max-depth=1 /
+ df -h
  
 ## PHP
  * Xdebug max value : https://xdebug.org/docs/all_settings#var_display_max_children
