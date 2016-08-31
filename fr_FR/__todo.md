@@ -14,13 +14,14 @@
  * 9.4.5 : definir heure
  * chattr +i
  
- du -h --max-depth=1 /
- df -h
+ du -h --max-depth=1 /  
+ df -h  
+ http://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system  
  
 ## PHP
  * Xdebug max value : https://xdebug.org/docs/all_settings#var_display_max_children
 
 ## Duplicity
- duplicity collection-status file:///path-backups/
- duplicity --file-to-restore path/to/restore  file:///path/backups /path/to/restore
- - --no-encryption
+ duplicity collection-status file:///path-backups/  
+ duplicity --file-to-restore path/to/restore  file:///path/backups /path/to/restore  
+ -option  --no-encryption
