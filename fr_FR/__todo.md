@@ -25,3 +25,8 @@
  duplicity collection-status file:///path-backups/  
  duplicity --file-to-restore path/to/restore  file:///path/backups /path/to/restore  
  -option  --no-encryption
+
+## OpenSSL
+Revoquer certificat  
+openssl ca -revoke newcerts/01.pem -config openssl.cnf  
+
