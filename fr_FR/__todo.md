@@ -15,9 +15,10 @@
  * 9.4.2 : wall
  * 9.4.5 : definir heure
  * chattr +i
+ * scp <file> <username>@<IP address or hostname>:<Destination>
  
- du -h --max-depth=1 /  
- df -h  
+ * du -h --max-depth=1 /  
+ * df -h  
  http://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system  
  
 ## PHP
