@@ -5,7 +5,9 @@
 
 ## GNU
 > https://www.debian.org/doc/manuals/debian-reference/ch09.fr.html
+ * ~/.bashrc
  * alias ls='ls --time-style=+%d.%m.%y\ %H:%M'
+ * alias l='ls $LS_OPTIONS -lAh --group-directories-first --time-style=+%d.%m.%y\ %H:%M'
  * 9.3.7 : fuser -v /var/log/mail.log
  * 9.3.8 : watch w
  * 9.3.13 : at / cron
