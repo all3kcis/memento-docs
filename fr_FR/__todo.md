@@ -33,3 +33,6 @@
 Revoquer certificat  
 openssl ca -revoke newcerts/01.pem -config openssl.cnf  
 
+## FFMPEG
+`ffmpeg -i in.mp4 -vcodec libx264 -f mp4 -preset veryslow -s 480x270 -acodec aac -ab 128k out.mp4`  
+libx265 aussi possible
