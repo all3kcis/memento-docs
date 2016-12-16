@@ -36,3 +36,13 @@ openssl ca -revoke newcerts/01.pem -config openssl.cnf
 ## FFMPEG
 `ffmpeg -i in.mp4 -vcodec libx264 -f mp4 -preset veryslow -s 480x270 -acodec aac -ab 128k out.mp4`  
 libx265 aussi possible
+
+
+## SQl
+
+### Construire une requete de suppression de tables en fonction du préfix  
+```sql
+SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) 
+    AS statement FROM information_schema.tables 
+    WHERE table_schema = 'database_name' AND table_name LIKE 'prefix_%';
+```
