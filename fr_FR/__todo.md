@@ -22,7 +22,10 @@
  http://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system  
  
  apt-mark hold apache2  
- apt-mark unhold apache2
+ apt-mark unhold apache2  
+ 
+ ### Generer mdp aleatoire  
+ tr -cd '[:alnum:]' < /dev/urandom | fold -w12 | head -n1
  
 ## PHP
  * Xdebug max value : https://xdebug.org/docs/all_settings#var_display_max_children
