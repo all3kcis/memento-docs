@@ -21,5 +21,8 @@ Vérifier (au besoin le rajouter) que l'utilisateur est autorisé
 **Pour connecter un compte automatiquement**
 Exécuter : `netplwiz`
 
-**Autres**
+**Autres**  
 `tracert`
+
+## Forcer la suppression d'un repertoire
+`rd /s /q "\\?\D:\chemin_repertoire"`
