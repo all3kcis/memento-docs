@@ -2,6 +2,12 @@
 
 ## Git
  * bisect
+Retourner a un ancien commit  
+git checkout 6df1g1 (id du commit)  
+
+Retourner au dernier commit (plus recent)  
+git checkout master  
+
 
 ## GNU
 > https://www.debian.org/doc/manuals/debian-reference/ch09.fr.html
@@ -51,4 +57,19 @@ libx265 aussi possible
 SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) 
     AS statement FROM information_schema.tables 
     WHERE table_schema = 'database_name' AND table_name LIKE 'prefix_%';
+```
+
+
+## Docker
+```
+docker build -t <username>/<repo>:<tag>
+docker run --name <doc_name> -p 8585:80 -dit <username>/<repo>:<tag>
+docker run --name <doc_name> -p 8585:80 -v $(pwd):/var/www/html/ -dit <username>/<repo>:<tag>
+docker exec -ti <name/hash> <cmd>
+```
+
+## ESXI Customizer
+```
+.\ESXi-Customizer-PS-v2.4.ps1 -izip .\VMware-VMvisor-Installer-6.0.0.update01-3029758.x86_64.zip -load .\VMware_bootbank_net-r8168_8.013.00-3vmw.510.0.0.799733.vib
+.\ESXi-Customizer-PS-v2.4.ps1 -v60 -load -vft net-r8168
 ```
