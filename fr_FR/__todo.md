@@ -73,3 +73,6 @@ docker exec -ti <name/hash> <cmd>
 .\ESXi-Customizer-PS-v2.4.ps1 -izip .\VMware-VMvisor-Installer-6.0.0.update01-3029758.x86_64.zip -load .\VMware_bootbank_net-r8168_8.013.00-3vmw.510.0.0.799733.vib
 .\ESXi-Customizer-PS-v2.4.ps1 -v60 -load -vft net-r8168
 ```
+## EXIM4
+
+http://howto.landure.fr/gnu-linux/trucs-et-astuces-pour-exim-4
