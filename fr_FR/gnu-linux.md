@@ -63,6 +63,27 @@ tail -f fichier.log
 Option `-n <chiffre>` pour définir le nombre de lignes
 Option `-f` mode follow, suivre en français.
 
+### Gestions des jobs
+
+**Lancer en tache de fond**  
+Terminer la commande avec le signe `&` Ex: `sleep 60 &`  
+La commande renverra quelque chose du style `[1] 4355` ou "1" est l'id du job et "4355" l'id du processus 
+
+**Voir les jobs en cours**
+> Pour l'utilisateur courant.  
+
+Commande : `jobs`
+
+**Passer un job au premier plan**  
+`fg %1` où "1" représente l'id du job.
+
+**Passer un job en arrière plan**  
+Appuyer sur `CTRL+Z` pour mettre en pause le processus  
+puis `bg %1` où "1" représente l'id du job.
+
+**Tuer un job**  
+`kill %1` où "1" représente l'id du job.
+
 ### Ajouter un utilisateur dans un groupe
 `adduser user groupe`
 
