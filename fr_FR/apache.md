@@ -16,5 +16,8 @@
 
 ## Serveur
 
-*Relancer*  
+### Test configuration
+`apachectl configtest`
+
+### Relancer  
 `service apache2 restart` Ou `/etc/init.d/apache2 restart`
