@@ -55,6 +55,28 @@
 
 ## Gestion
 
+### Redirection Entrée/Sortie standard
+> Astuce : redirection vers rien `>/dev/null`  
+
+**Redirection sortie standard**  
+`2>`  : redirige les erreurs dans un fichier (s'il existe déjà, il sera écrasé)  
+`2>>` : redirige les erreurs à la fin d'un fichier (s'il n'existe pas, il sera créé)  
+`2>&1`: redirige les erreurs au même endroit et de la même façon que la sortie standard.  
+
+**Envoyer le résultat d'une commande dans un fichier**  
+`>`, Ex: `ls > list.txt`  
+Ou pour ne pas écraser le contenu du fichier déjà existant :  
+`>>`, Ex: `ls >> list.txt`  
+
+**Connecter sortie standard sur entrée standard**  
+`|`, Ex : `ls -l | less`
+
+**lancer une commande si la précédente a réussi**  
+`ls foo && echo "J'ai un fichier foo."`
+
+**lancer une commande si la précédente a échoué**  
+`ls foo || echo "Je n'ai pas de fichier foo."`
+
 ### Affichage logs
 Affichage des dernières lignes d'un fichier
 ```sh
@@ -64,6 +86,7 @@ Option `-n <chiffre>` pour définir le nombre de lignes
 Option `-f` mode follow, suivre en français.
 
 ### Gestions des jobs
+> **Astuce** : A utiliser avec la redirection de sortie standard.
 
 **Lancer en tache de fond**  
 Terminer la commande avec le signe `&` Ex: `sleep 60 &`  
@@ -83,6 +106,14 @@ puis `bg %1` où "1" représente l'id du job.
 
 **Tuer un job**  
 `kill %1` où "1" représente l'id du job.
+
+**Déposseder un job**  
+Permet de garder le processus en arrière plan en quittant le shell.  
+`disown -h %1` où "1" représente l'id du job.
+
+**Lancer un job en dehors du terminal courant**  
+Ex : `nohup sleep 50` la commande crée un fichier de log nommé nohup.out, permettant de consulter les messages qui auraient dû s'afficher sur la console.  
+On pourra visionner le contenu comme ceci : `more nohup.out`
 
 ### Ajouter un utilisateur dans un groupe
 `adduser user groupe`
