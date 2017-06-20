@@ -47,6 +47,10 @@
 
 ## Réseau
 
+### Test envoi mail  
+
+`echo "Mail envoyé le $(date)" | mail -s "Test envoi de mail depuis $HOST" votre_adresse@exemple.com`
+
 ### Relancer l'interface réseau
 `/etc/init.d/networking restart`
 
