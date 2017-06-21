@@ -75,3 +75,6 @@ hosts_require_auth = <smtp_address>
 ```
 <smtp_address>:<login_or_email>:<passwd>
 ```
+
+## Sources  
+http://bradthemad.org/tech/notes/exim_cheatsheet.php
