@@ -76,5 +76,14 @@ hosts_require_auth = <smtp_address>
 <smtp_address>:<login_or_email>:<passwd>
 ```
 
+## Redirection mails de root
+Modifier le fichier `/etc/exim4/conf.d/rewrite/00_exim4-config_header`  
+Ajouter la ligne `root@* new_user@domaine.com`
+
+## Mettre à jour la configuration
+`update-exim4.conf`  
+puis `service exim4 restart`  
+
 ## Sources  
-http://bradthemad.org/tech/notes/exim_cheatsheet.php
+http://bradthemad.org/tech/notes/exim_cheatsheet.php  
+https://www.jbnet.fr/systeme/linux/debian-rediriger-les-emails-root-et-autres-utilisateurs-avec-exim4.html  
