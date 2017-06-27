@@ -122,6 +122,9 @@ On pourra visionner le contenu comme ceci : `more nohup.out`
 ### Ajouter un utilisateur dans un groupe
 `adduser user groupe`
 
+### Retirer un utilisateur d'un groupe
+`gpasswd -d user groupe`  
+
 ### Fichiers hosts
 ```
 etc/hosts
