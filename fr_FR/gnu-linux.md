@@ -120,7 +120,8 @@ Ex : `nohup sleep 50` la commande crée un fichier de log nommé nohup.out, perm
 On pourra visionner le contenu comme ceci : `more nohup.out`
 
 ### Ajouter un utilisateur dans un groupe
-`adduser user groupe`
+`adduser user groupe`  
+groupes secondaire `usermod -G groupe user`
 
 ### Retirer un utilisateur d'un groupe
 `gpasswd -d user groupe`  
