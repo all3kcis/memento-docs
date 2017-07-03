@@ -4,6 +4,7 @@
 
 ### Modifications des droits
 @Todo
+*stickybit
 
 ### Copie sécurisé
 `scp -P 2113 file user@hote:path`
@@ -56,6 +57,11 @@
 
 ### Traceroute
 `traceroute`
+
+## SSH
+ 
+Recuperer les clés publiques d'un serveur  
+`ssh-keyscan -p <port> <host> >> scan`
 
 ## Gestion
 
