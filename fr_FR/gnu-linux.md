@@ -60,8 +60,12 @@
 
 ## SSH
  
-Recuperer les clés publiques d'un serveur  
-`ssh-keyscan -p <port> <host> >> scan`
+**Recuperer les clés publiques d'un serveur**  
+`ssh-keyscan -p <port> <host> > <your_file>`
+
+**Obtenir les fingerpritn des clés**  
+`ssh-keygen -lf <your_file>`
+
 
 ## Gestion
 
