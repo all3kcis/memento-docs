@@ -66,6 +66,10 @@
 **Obtenir les fingerpritn des clés**  
 `ssh-keygen -lf <your_file>`
 
+### WIFI
+**Diagnostique**  
+`watch -n 1 cat /proc/net/wireless`  
+`iwconfig`
 
 ## Gestion
 
