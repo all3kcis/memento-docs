@@ -19,5 +19,8 @@
 ### Test configuration
 `apachectl configtest`
 
+### Affichage des vhosts
+`apachectl -t -D DUMP_VHOSTS`
+
 ### Relancer  
 `service apache2 restart` Ou `/etc/init.d/apache2 restart`
