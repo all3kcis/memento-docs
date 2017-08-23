@@ -35,7 +35,12 @@ Editer fichier : ` .git/info/exclude `
 **Modifier message du dernier commit**
 > si pas déjà envoyé en ligne
 
-`git commit --amend`
+`git commit --amend`  
+
+**Modifier auteur du dernier commit**  
+> si pas déjà envoyé en ligne  
+
+`git commit --amend --author "username <email>"`  
 
 **Nettoyer le répertoire de travail et l'index**
 > Les modifications non commit seront perdues
