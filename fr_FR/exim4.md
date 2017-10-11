@@ -3,6 +3,15 @@
 ## Commandes utiles
 > Source : http://howto.landure.fr/gnu-linux/trucs-et-astuces-pour-exim-4
 
+**Voir les messages de la file d'attente**  
+```
+mailq
+```  
+**Supprimer un message de la file d'attente** 
+
+```
+exim -Mrm <id_msg>
+```  
 **Supprimer tous les messages de la file d'attente**  
 ```
 exim4 -Mrm `ls /var/spool/exim4/input/ | grep -- -H$ | cut -c 1-16`
@@ -15,7 +24,7 @@ exim4 -qff
 ```
 mailq | grep "frozen"
 ```
-** Retenter la livraison d'un message**
+**Retenter la livraison d'un message**
 ```
 exim4 -M <id_msg>
 ```
