@@ -1,7 +1,8 @@
 # Exim4
 
 ## Commandes utiles
-> Source : http://howto.landure.fr/gnu-linux/trucs-et-astuces-pour-exim-4
+> Source : http://howto.landure.fr/gnu-linux/trucs-et-astuces-pour-exim-4  
+> https://buzut.fr/connaitre-commandes-dompter-exim4/
 
 **Voir les messages de la file d'attente**  
 ```
