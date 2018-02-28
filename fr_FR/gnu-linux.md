@@ -130,7 +130,7 @@ Permet de garder le processus en arrière plan en quittant le shell.
 `disown -h %1` où "1" représente l'id du job.
 
 **Lancer un job en dehors du terminal courant**  
-Ex : `nohup sleep 50` la commande crée un fichier de log nommé nohup.out, permettant de consulter les messages qui auraient dû s'afficher sur la console.  
+Ex : `nohup sleep 50 &` la commande crée un fichier de log nommé nohup.out, permettant de consulter les messages qui auraient dû s'afficher sur la console.  
 On pourra visionner le contenu comme ceci : `more nohup.out`
 
 ### Ajouter un utilisateur dans un groupe
