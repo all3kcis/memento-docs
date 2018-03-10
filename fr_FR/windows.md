@@ -26,3 +26,10 @@ Exécuter : `netplwiz`
 
 ## Forcer la suppression d'un repertoire
 `rd /s /q "\\?\D:\chemin_repertoire"`
+
+## PowerShell  
+**Executer des scripts non signés**  
+Voir la configuratuin actuel  
+`Get-ExecutionPolicy`  
+Permettre l'utilisation de scripts non signés  
+`Set-ExecutionPolicy unrestricted`
