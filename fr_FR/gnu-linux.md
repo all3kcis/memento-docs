@@ -61,6 +61,9 @@
 ### Test fragmentation
 `ping -M do -s X IP` pour tester si un paquet de taille X+28 (IPv4) ou X+48 (IPv6) arrive à IP sans fragmentation  
 
+### Qui ecoute quoi
+`netstat -nlp`
+
 ## SSH
  
 **Recuperer les clés publiques d'un serveur**  
