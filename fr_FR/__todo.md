@@ -29,6 +29,9 @@ git checkout master
  
  apt-mark hold apache2  
  apt-mark unhold apache2  
+   
+ **Mount CIFS**
+   https://blog.tomecek.net/post/automount-with-systemd/
  
  ### Generer mdp aleatoire  
  tr -cd '[:alnum:]' < /dev/urandom | fold -w12 | head -n1
