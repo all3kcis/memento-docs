@@ -46,6 +46,16 @@
 > - -name "" = pattern de recherche du nom des fichiers
 > - -mtime -7 = dans les sept derniers jours
 
+## Packages
+
+### Liste des packages installés
+`dpkg-query -l`  
+
+### Date d'installation
+`zgrep -h " installed " /var/log/dpkg.log* | sort` ajouter si besoin : `| grep <nomdupackage>`  
+**OU** Distri basée sur Red Hat  
+`rpm -qa --last`
+
 ## Réseau
 
 ### Test envoi mail  
