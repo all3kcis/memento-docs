@@ -1,5 +1,7 @@
 # GNU/Linux
 
+ - https://github.com/dylanaraps/pure-bash-bible
+
 ## Fichiers
 
 ### Modifications des droits
