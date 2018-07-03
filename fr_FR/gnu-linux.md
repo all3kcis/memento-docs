@@ -1,6 +1,7 @@
 # GNU/Linux
 
- - https://github.com/dylanaraps/pure-bash-bible
+ - https://github.com/dylanaraps/pure-bash-bible  
+ - http://www.lestutosdenico.com/tutos-de-nico/netcat
 
 ## Fichiers
 
