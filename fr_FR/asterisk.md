@@ -2,3 +2,12 @@
   
 **Afficher les redirections (callforward) actives**  
 `asterisk -rx "database show CF"`
+
+**Voir les communications en cours**  
+`asterisk -rx "core show channels"`
+
+**Détail d'une communication en cours**  
+`asterisk -rx "core show channel <channel_name>"`
+
+**Observer la perte de paquets sur une communication**  
+`asterisk -rx "sip show channelstats"`
