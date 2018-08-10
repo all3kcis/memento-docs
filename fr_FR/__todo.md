@@ -29,6 +29,8 @@ git checkout master
  
  apt-mark hold apache2  
  apt-mark unhold apache2  
+ 
+ `find . ! -perm -o=r` trouver fichier sans perm de lecture
    
  **Mount CIFS**
    https://blog.tomecek.net/post/automount-with-systemd/
