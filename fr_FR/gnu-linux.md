@@ -75,7 +75,17 @@
 `ping -M do -s X IP` pour tester si un paquet de taille X+28 (IPv4) ou X+48 (IPv6) arrive à IP sans fragmentation  
 
 ### Qui ecoute quoi
-`netstat -nlp`
+`netstat -nlp` `-latupe`
+
+### Scan des host d'un réseau
+`nmap -sP 192.168.1.0/24`  
+
+### Tester un port
+`nmap -p 80 192.168.1.10`  
+
+### Ecouter un port avec netcat
+> https://doc.fedora-fr.org/wiki/Netcat,_connexion_client/serveur_en_bash  
+`nc -l 80`  
 
 ## SSH
  
