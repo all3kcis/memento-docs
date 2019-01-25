@@ -49,6 +49,9 @@
 > - -type f = fichiers
 > - -name "" = pattern de recherche du nom des fichiers
 > - -mtime -7 = dans les sept derniers jours
+#### Suivre les modifications d'un repertoire en live  
+`watch -n0,1 "ls -lrt /tmpdir/ | tail"`
+
 
 ## Packages
 
