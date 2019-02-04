@@ -7,6 +7,8 @@
 **Status jail**  
 `fail2ban-client status <jail_name>`
 
+**Unban User**  
+`fail2ban-client set <jail_name> unbanip <ip>`
 
 ## Sources :  
 https://kdecherf.com/blog/2009/03/27/fail2ban-email-alerte-facon-nagios/
