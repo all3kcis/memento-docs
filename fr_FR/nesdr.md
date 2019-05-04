@@ -28,3 +28,9 @@ qmake ../multimon-ng.pro
 make
 sudo make install
 ```
+Fonctionnement :  
+```sh
+rtl_fm -f 466231250 -s 22050 -g 30 -E dc - | multimon-ng -t raw -p -c -a POCSAG1200 -f alpha /dev/stdin &
+```
+-g 30 = gain  
+-E DC = supprime le pique DC
