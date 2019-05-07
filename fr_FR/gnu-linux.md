@@ -192,3 +192,14 @@ etc/hostname
 swapon -s
 free -m
 ```
+### Autres
+Supprimer les codes couleurs  
+```sh
+sed 's/\x1b\[[0-9;]*m//g'        # Remove color sequences only
+sed 's/\x1b\[[0-9;]*[a-zA-Z]//g' # Remove all escape sequences
+sed 's/\x1b\[[0-9;]*[mGKH]//g'   # Remove color and move sequences
+sed 's/\x1b\[[0-9;]*[mGKF]//g'   # Remove color and move sequences
+```
+> See : https://superuser.com/questions/380772/removing-ansi-color-codes-from-text-stream
+
+
