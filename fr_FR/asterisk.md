@@ -1,6 +1,10 @@
 # Asterisk
 https://www.provya.net/?d=2015/06/24/08/18/10-asterisk-les-commandes-utiles-pour-asterisk
   
+  **Suppression messages vocaux**  
+ [Voir Gist - vmspool_manager.pl](https://gist.github.com/all3kcis/e10877ce02a17d10e35dac0bea76bede)  
+
+  
 **Afficher les redirections (callforward) actives**  
 `asterisk -rx "database show CF"`
 
