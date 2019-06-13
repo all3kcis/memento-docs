@@ -192,6 +192,17 @@ etc/hostname
 swapon -s
 free -m
 ```
+
+### Utilisation Mémoire
+Trie utilisation mémoire par process  
+```sh
+ps -e -orss=,args= | sort -b -k1,1n | pr -TW$COLUMNS
+```
+Supprimer cache  
+```sh
+echo 3 > /proc/sys/vm/drop_caches
+```
+
 ### Autres
 Supprimer les codes couleurs  
 ```sh
