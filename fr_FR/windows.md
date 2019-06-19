@@ -21,6 +21,13 @@ Vérifier (au besoin le rajouter) que l'utilisateur est autorisé
 **Pour connecter un compte automatiquement**
 Exécuter : `netplwiz`
 
+**Ajouter une route reseau**
+```
+> route ADD 157.0.0.0 MASK 255.0.0.0 157.55.80.1 METRIC 3 IF 2
+         destination^      ^mask     ^gateway     metric^    ^
+                                                    Interface^
+```
+
 **Autres**  
 `tracert`
 
