@@ -3,6 +3,7 @@
  - https://github.com/dylanaraps/pure-bash-bible  
  - http://www.lestutosdenico.com/tutos-de-nico/netcat
  - https://www.guillaume-leduc.fr/outils-du-sysadmin-linux-ss.html
+ - https://www.pcsuggest.com/linux-bluetooth-setup-hcitool-bluez/
 
 ## Fichiers
 
