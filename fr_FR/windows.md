@@ -1,4 +1,4 @@
-#Windows
+# Windows
 
 **Réinitialiser le réseau**
 > Commandes à exécuter en administrateur,
@@ -40,3 +40,8 @@ Voir la configuratuin actuel
 `Get-ExecutionPolicy`  
 Permettre l'utilisation de scripts non signés  
 `Set-ExecutionPolicy unrestricted`
+
+## Time
+
+### Infos synchro temps (NTP)  
+`w32tm /query /status`
