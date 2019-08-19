@@ -204,6 +204,10 @@ Supprimer cache
 echo 3 > /proc/sys/vm/drop_caches
 ```
 
+### NTP
+See : https://www.cyberciti.biz/faq/linux-unix-bsd-is-ntp-client-working/
+
+
 ### Autres
 Supprimer les codes couleurs  
 ```sh
