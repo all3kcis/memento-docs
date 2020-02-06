@@ -7,6 +7,9 @@
 **Status jail**  
 `fail2ban-client status <jail_name>`
 
+**Parametres des jail**  
+`fail2ban-client -d`  
+
 **Unban User**  
 `fail2ban-client set <jail_name> unbanip <ip>`
 
