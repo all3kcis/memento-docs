@@ -4,6 +4,7 @@
  - http://www.lestutosdenico.com/tutos-de-nico/netcat
  - https://www.guillaume-leduc.fr/outils-du-sysadmin-linux-ss.html
  - https://www.pcsuggest.com/linux-bluetooth-setup-hcitool-bluez/
+ - https://www.christophe-casalegno.com/linux-fonctions-bash-que-jutilise-dans-mes-scripts-shell/
 
 ## Fichiers
 
