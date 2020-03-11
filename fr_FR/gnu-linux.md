@@ -34,13 +34,18 @@
 #### Rechercher une expression dans une liste de fichiers
 ```sh
   find . -type f -name "*.php" | xargs grep "base64_decode" --color
-```
+```  
 *Arguments*
 >  - . = répertoire courant
 >  - -type f = fichiers
 >  - -name "" = pattern de recherche du nom des fichiers
 >  - grep "" = expression à rechercher
 >  - --color = pour mettre en evidence l'expression trouvée dans les résultats
+
+```sh
+  find . -regextype posix-egrep -regex ".*([0-9]{3,4}x[0-9]{3,4})\.jpg" # ex: IMG145-250x125.jpg
+  # -delete pour supprimer
+```
 
 #### Rechercher les derniers fichiers modifiés
 ```sh
