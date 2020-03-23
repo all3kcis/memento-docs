@@ -1,12 +1,18 @@
 # Windows
-
-**Réinitialiser le réseau**
+## Réseau
+### Réinitialiser le réseau
 > Commandes à exécuter en administrateur,
 > puis relancer l'ordinateur
 ```sh
 netsh int ip reset
 netsh winsock reset catalog
 ```
+### Wifi
+```sh
+netsh wlan show profile
+netsh wlan show profile SSID key=clear
+```
+
 
 **Fermer les connexions sur les lecteurs réseaux**
 `net use * /delete`
