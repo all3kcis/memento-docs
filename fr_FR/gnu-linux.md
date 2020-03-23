@@ -228,3 +228,15 @@ sed 's/\x1b\[[0-9;]*[mGKF]//g'   # Remove color and move sequences
 ## Debian 10
 Export path - ajout sbin  
 `export PATH=$PATH:/usr/sbin/`  
+
+## Installing a root/CA certificate
+```
+mkdir /usr/share/ca-certificates/extra
+cp root_ca.crt /usr/share/ca-certificates/extra/
+
+dpkg-reconfigure ca-certificates
+# OR
+update-ca-certificates
+```
+If needed, convert pem to crt  
+`openssl x509 -in foo.pem -inform PEM -out foo.crt`
