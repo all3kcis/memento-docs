@@ -51,3 +51,4 @@ Permettre l'utilisation de scripts non signés
 
 ### Infos synchro temps (NTP)  
 `w32tm /query /status`
+> HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient
