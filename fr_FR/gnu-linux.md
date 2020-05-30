@@ -240,3 +240,7 @@ update-ca-certificates
 ```
 If needed, convert pem to crt  
 `openssl x509 -in foo.pem -inform PEM -out foo.crt`
+
+## Users
+**Compte system**  
+`adduser --system --no-create-home --group <username>`
