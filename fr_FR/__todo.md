@@ -50,12 +50,6 @@ git checkout master
 Revoquer certificat  
 openssl ca -revoke newcerts/01.pem -config openssl.cnf  
 
-## FFMPEG
-`ffmpeg -i in.mp4 -vcodec libx264 -f mp4 -preset veryslow -s 480x270 -acodec aac -ab 128k out.mp4`  
-libx265 aussi possible  
-`ffmpeg -i in.mp4 -ss 30 -c copy -t 10 out.mp4` Créé une copie de 10 secondes à partir de la 30eme seconde
-
-
 ## SQl
 
 ### Construire une requete de suppression de tables en fonction du préfix  
