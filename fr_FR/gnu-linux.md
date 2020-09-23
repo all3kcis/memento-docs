@@ -97,7 +97,9 @@
 
 ### Ecouter un port avec netcat
 > https://doc.fedora-fr.org/wiki/Netcat,_connexion_client/serveur_en_bash  
-`nc -l 80`  
+`nc -l -p 80`  
+**côté client**  
+`nc <ip> 80`  
 
 ## SSH
  
