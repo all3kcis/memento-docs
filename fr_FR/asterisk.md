@@ -8,6 +8,9 @@ https://www.provya.net/?d=2015/06/24/08/18/10-asterisk-les-commandes-utiles-pour
 **Afficher les redirections (callforward) actives**  
 `asterisk -rx "database show CF"`
 
+**Définir une redirections (callforward)**  
+`asterisk -rx "database put CF <ext> <number>"`  
+
 **Supprimer une redirection**  
 > CF/CFU/CFB  
 `asterisk -rx "database del CF <ext>"`  
