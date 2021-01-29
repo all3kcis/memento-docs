@@ -52,3 +52,16 @@ Permettre l'utilisation de scripts non signés
 ### Infos synchro temps (NTP)  
 `w32tm /query /status`
 > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient
+
+## Tree
+```sh
+c:\>Tree /?
+Graphically displays the folder structure of a drive or path.
+
+TREE [drive:][path] [/F] [/A]
+
+   /F   Display the names of the files in each folder.
+   /A   Use ASCII instead of extended characters.
+```
+`tree > tree.txt /a /f`
+
