@@ -226,6 +226,9 @@ sed 's/\x1b\[[0-9;]*[mGKF]//g'   # Remove color and move sequences
 ```
 > See : https://superuser.com/questions/380772/removing-ansi-color-codes-from-text-stream
 
+## Samba
+List users  
+`pdbedit -w -L`
 
 ## Debian 10
 Export path - ajout sbin  
