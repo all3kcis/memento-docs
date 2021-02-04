@@ -14,8 +14,11 @@ netsh wlan show profile SSID key=clear
 ```
 
 
-**Fermer les connexions sur les lecteurs réseaux**
-`net use * /delete`
+**Fermer les connexions sur les lecteurs réseaux**  
+`net use * /delete`  
+OR  
+WIN + R  
+`rundll32.exe keymgr.dll, KRShowKeyMgr`
 
 **Autoriser un utilisateur à éteindre l'ordinateur à distance**
 > Démarrer -> Exécuter -> "**gpedit.msc**"
