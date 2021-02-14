@@ -5,9 +5,9 @@
 ```
 
 ## Activer Multipath sur ISCSI
-http://www.pegasus45.lautre.net/index.php/VMware_ESXi_6.0:_LAB01_-_Cr%C3%A9ation_de_datastore_iSCSI_et_gestion_du_multipathing
-http://www.pegasus45.lautre.net/index.php/VMware_ESXi_6.0:_LAB01_-_Cr%C3%A9ation_de_LUN_avec_Freenas
-https://kb.vmware.com/s/article/1003973
+http://www.pegasus45.lautre.net/index.php/VMware_ESXi_6.0:_LAB01_-_Cr%C3%A9ation_de_datastore_iSCSI_et_gestion_du_multipathing  
+http://www.pegasus45.lautre.net/index.php/VMware_ESXi_6.0:_LAB01_-_Cr%C3%A9ation_de_LUN_avec_Freenas  
+https://kb.vmware.com/s/article/1003973  
 https://kb.vmware.com/s/article/1017760  
 https://kb.vmware.com/s/article/1036189  
 
