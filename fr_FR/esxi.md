@@ -5,6 +5,12 @@
 ```
 
 ## Activer Multipath sur ISCSI
+http://www.pegasus45.lautre.net/index.php/VMware_ESXi_6.0:_LAB01_-_Cr%C3%A9ation_de_datastore_iSCSI_et_gestion_du_multipathing
+http://www.pegasus45.lautre.net/index.php/VMware_ESXi_6.0:_LAB01_-_Cr%C3%A9ation_de_LUN_avec_Freenas
+https://kb.vmware.com/s/article/1003973
+https://kb.vmware.com/s/article/1017760  
+https://kb.vmware.com/s/article/1036189  
+
 `esxcli storage core path list`  
 `esxcli storage nmp device list` verifier la ligne : Working Paths  
 Voir quel mode est actif `esxcli storage nmp device list -d "naa.6589cfc000000e0360243f01854e371f" | grep PSP` ex : `Path Selection Policy: VMW_PSP_MRU`  
