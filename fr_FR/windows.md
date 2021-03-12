@@ -66,5 +66,6 @@ TREE [drive:][path] [/F] [/A]
    /F   Display the names of the files in each folder.
    /A   Use ASCII instead of extended characters.
 ```
-`tree > tree.txt /a /f`
+`tree > tree.txt /a /f`  
+`tree > "$((get-item $pwd).Name).txt" /A`
 
