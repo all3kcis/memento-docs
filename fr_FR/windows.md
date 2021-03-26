@@ -69,3 +69,14 @@ TREE [drive:][path] [/F] [/A]
 `tree > tree.txt /a /f`  
 `tree > "$((get-item $pwd).Name).txt" /A`
 
+## WMIC
+### Lister les utilisateurs et leurs SID
+`wmic useraccount get name, sid`  
+Pour un utilisateur en particulier  `wmic useraccount where name="username" get` ou `wmic useraccount where name='%username%' get sid`  
+Utilisateur d'un domaine `whoami /user`  
+Local administrateur `wmic useraccount where (name='administrator' and domain='%computername%') get name,sid`  
+Domaine administrateur `wmic useraccount where (name='administrator' and domain='%userdomain%') get name,sid`  
+Trouver utilisateur correspondant au SID `wmic useraccount where sid='S-1-3-12-1234....' get name`  
+
+
+
