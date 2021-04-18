@@ -202,6 +202,11 @@ swapon -s
 free -m
 ```
 
+Vider Swap  
+```sh
+swapoff -a && swapon -a
+```
+
 ### Utilisation Mémoire
 Trie utilisation mémoire par process  
 ```sh
