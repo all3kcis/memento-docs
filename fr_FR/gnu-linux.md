@@ -62,9 +62,9 @@
 #### Transfert fichiers avec NC
 ```sh
 # Envoi
-  tar cf - * | netcat 192.168.1.59 7000
+  tar cf - * | nc 192.168.1.59 7000 -w 1
 # Reception
-  netcat -l -p 7000 | tar x
+  nc -l -p 7000 | tar x
 ```
 
 ## Packages
