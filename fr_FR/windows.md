@@ -1,4 +1,8 @@
 # Windows
+
+*Bypass M$ account - New install*
+`OOBE\BYPASSNRO`
+
 ## Réseau
 ### Réinitialiser le réseau
 > Commandes à exécuter en administrateur,
