@@ -19,3 +19,12 @@ FolderName           User                 AccessRights
 Calendrier           Par défaut           {LimitedDetails}
 Calendrier           Anonyme              {None}
 ```
+
+## Santé des services  
+`Get-ExchangeServer | Test-ServiceHealth`
+
+## Reconfiguration des services nécessaires  
+ > https://learn.microsoft.com/fr-fr/exchange/plan-and-deploy/deployment-ref/services-overview?view=exchserver-2019
+```sh
+Set-Service -Name "SERVICENAME" -StartupType Automatic
+```
