@@ -38,6 +38,7 @@ git checkout master
  ### Generer mdp aleatoire  
  `tr -cd '[:alnum:]' < /dev/urandom | fold -w12 | head -n1`  
  `openssl rand -base64 32`  
+ `openssl rand -hex 32` # Ex Zabbix PSK  
  
 ## PHP
  * Xdebug max value : https://xdebug.org/docs/all_settings#var_display_max_children
