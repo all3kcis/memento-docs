@@ -60,6 +60,11 @@ Permettre l'utilisation de scripts non signés
 `w32tm /query /status`
 > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient
 
+### Modification timezone
+`tzutil /g` Timezone actuel  
+`tzutil /l` Lister Timezones  
+`tzutil /s "Romance Standard Time"` Définir un timezone  
+
 ## Tree
 ```sh
 c:\>Tree /?
