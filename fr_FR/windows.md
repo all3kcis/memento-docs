@@ -87,6 +87,8 @@ Local administrateur `wmic useraccount where (name='administrator' and domain='%
 Domaine administrateur `wmic useraccount where (name='administrator' and domain='%userdomain%') get name,sid`  
 Trouver utilisateur correspondant au SID `wmic useraccount where sid='S-1-3-12-1234....' get name`  
 
+### Groups lsit of user
+`net user /domain <username>`  
 
 ## Updates
 ### Remove download but not installed update
