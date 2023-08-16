@@ -88,4 +88,11 @@ Domaine administrateur `wmic useraccount where (name='administrator' and domain=
 Trouver utilisateur correspondant au SID `wmic useraccount where sid='S-1-3-12-1234....' get name`  
 
 
+## Updates
+### Remove download but not installed update
+```
+Go to C:\Windows\SoftwareDistribution\Download, and delete all contents. 
+Open CMD, and type in net stop wuauserv.
+Now type in net start wuauserv.
+```
 
